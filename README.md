@@ -38,10 +38,6 @@ To view bookmarks, navigate to `localhost:3000/bookmarks`.
 ```
 rspec
 ```
-### To run linting:
-```
-rubocop
-```
 
 ### Domain Model
 
