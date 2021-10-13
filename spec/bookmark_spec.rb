@@ -3,9 +3,9 @@ require 'bookmark'
 describe Bookmark do
   describe '#all' do 
     it 'returns all bookmarks' do
-      Bookmark.add("http://www.google.com")
-      Bookmark.add("http://www.amazon.com")
-      Bookmark.add("http://www.twitter.com")
+      Bookmark.create("http://www.google.com")
+      Bookmark.create("http://www.amazon.com")
+      Bookmark.create("http://www.twitter.com")
       
       bookmarks = Bookmark.all
 
@@ -15,9 +15,9 @@ describe Bookmark do
     end
   end
 
-  describe '#add' do
-    it 'adds a bookmark' do
-      Bookmark.add("http://www.google.com")
+  describe '#create' do
+    it 'creates a bookmark' do
+      Bookmark.create("http://www.google.com")
       bookmarks = Bookmark.all
       
       expect(bookmarks).to include("http://www.google.com")
